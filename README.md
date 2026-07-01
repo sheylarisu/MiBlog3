@@ -1,43 +1,38 @@
-# Astro Starter Kit: Minimal
+# MiBlog2
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Blog personal creado con [Astro](https://astro.build).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura
 
 ```text
 /
 ├── public/
+│   ├── favicon.ico
+│   └── favicon.svg
 ├── src/
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── Footer.astro
+│   │   └── Navigation.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   ├── about.astro
+│   │   ├── blog.astro
+│   │   ├── index.astro
+│   │   └── posts/
+│   │       ├── post-1.md
+│   │       ├── post-2.md
+│   │       └── post-3.md
+│   └── styles/
+│       └── style.css
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Comandos
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Comando | Acción |
+|---------|--------|
+| `npm install` | Instala dependencias |
+| `npm run dev` | Inicia servidor local en `localhost:4321` |
+| `npm run build` | Compila el sitio a `./dist/` |
+| `npm run preview` | Previsualiza la build localmente |
